@@ -1,14 +1,14 @@
 <template>
    <div class="contenedor">
         <h2>Login</h2>
-        <form id="forma" name="forma">
+        <form id="forma" name="forma" method="POST">
             <div class="elemento">
                 <label for="usuario">Usuario</label>
                 <input type="text" id="usuario" name="usuario" required="true"/>
             </div>
             <div class="elemento">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" required="true"/>
+                <input type="password" id="password" name="passwrod" required="true"/>
             </div>
             <div class="elemento">
                 <input type="submit" value="Enviar"/>
@@ -45,26 +45,5 @@ body{
     font-size: 30px;
     color: #4cc9f0;
     text-align: center;
-}
-.contenedor .elemento label{
-    color: #fff;
-}
-.contenedor .elemento input{
-    width: 100%;
-    padding: 10px 0;
-    color: #fff;
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #fff;
-    margin-bottom: 30px;
-}
-.contenedor .elemento input[type="submit"]{
-    background-color: #f72585;
-    border:none;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    cursor: pointer;
-    padding: 15px;
-    margin-top: 30px;
 }
 </style>
